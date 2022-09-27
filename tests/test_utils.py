@@ -59,7 +59,7 @@ class TestReadingJSON(unittest.TestCase):
 class TestWritingJSON(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
-        cls.write_filepath = "tests/data/test_menu.json"
+        cls.write_filepath = "tests/data/test_write.json"
 
     def tearDown(self) -> None:
         if os.path.exists(self.write_filepath):
