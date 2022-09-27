@@ -15,7 +15,7 @@ def read_json(filepath: str) -> list[dict]:
 
 
 def write_json(filepath: str, payload: dict) -> dict:
-    data = read_json(FILEPATH)
+    data = read_json(filepath)
     FormattedPayload = addId(data, payload)
     data.append(FormattedPayload)
 

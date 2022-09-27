@@ -67,12 +67,8 @@ class TestWritingJSON(unittest.TestCase):
 
     def test_writing_non_existing_json(self):
         new_item = {"name": "CHURROS DO M5", "price": 5.0}
-        print(read_json(self.write_filepath))
         result = write_json(self.write_filepath, new_item)
         expected = {"name": "CHURROS DO M5", "price": 5.0, "id": 1}
-        print(result)
-
-        
 
         self.assertEqual(
             result["id"],
