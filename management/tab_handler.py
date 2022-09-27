@@ -14,5 +14,5 @@ def calculate_tab(consumptions: list[dict]) -> dict:
                 subtotal += plate['price'] * order['amount']
     return {
         'subtotal': subtotal,
-        'created_at': dt.now().strftime('%Y/%m/%d %H:%M:%S')
+        'created_at': dt.now().strftime('%d/%m/%Y %H:%M:%S')
     }
