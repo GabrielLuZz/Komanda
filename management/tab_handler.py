@@ -1,5 +1,4 @@
-﻿from re import sub
-from utils.json_handler import read_json, FILEPATH
+﻿from utils.json_handler import read_json, FILEPATH
 from datetime import datetime as dt
 
 
